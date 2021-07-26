@@ -45,6 +45,6 @@ jobs:
       - name: Build with Maven
         run: mvn package -DskipTests
       - name: run
-        run: java -jar webgoat-server-8.2.0.jar &
+        run: java -jar /home/runner/work/WebGoat/WebGoat/webgoat-server/target/webgoat-server-8.2.0.jar &
       - name: check
         run: curl http://127.0.0.1:8080/WebGoat
