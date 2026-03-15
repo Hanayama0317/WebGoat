@@ -572,7 +572,7 @@ jobs:
           echo "Container / Hadolint:       ${{ needs.container-dockerfile-lint.result }}"
           echo "=============================="
 
-      - name: Gate: Fail if critical secrets detected
+      - name: "Gate: Fail if critical secrets detected"
         if: >
           needs.secret-gitleaks.result == 'failure' ||
           needs.secret-trufflehog.result == 'failure'
