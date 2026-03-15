@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  OWASP Dependency-Check 抑制ファイル
+  WebGoatは意図的に脆弱なアプリケーションであり、教育目的で古いライブラリを含んでいます。
+  本番アプリケーションでは このファイルを適切に管理してください。
+-->
+<suppressions xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd">
+
+  <!--
+    例: 誤検知や意図的な脆弱性を抑制する場合のテンプレート
+    WebGoatは教育用アプリのため、意図的な脆弱性は抑制対象外とします。
+
+  <suppress>
+    <notes>
+      理由: WebGoatは教育用アプリのため、この脆弱性は意図的に含まれています。
+      参照: https://owasp.org/www-project-webgoat/
+    </notes>
+    <cve>CVE-XXXX-XXXXX</cve>
+  </suppress>
+  -->
+
+</suppressions>
